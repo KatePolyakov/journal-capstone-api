@@ -11,12 +11,12 @@ export default (req, res, next) => {
       next();
     } catch (error) {
       return res.status(403).json({
-        message: 'No auth information',
+        message: 'No information',
       });
     }
   } else {
     return res.status(403).json({
-      message: 'No auth information',
+      message: 'No information',
     });
   }
 };

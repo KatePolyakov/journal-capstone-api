@@ -91,7 +91,7 @@ export const getMe = async (req, res) => {
 
     if (!user) {
       return res.status(404).json({
-        message: 'USER Not Found',
+        message: 'Not Found',
       });
     }
     
@@ -100,7 +100,7 @@ export const getMe = async (req, res) => {
     res.json(userData);
   } catch (error) {
     res.status(404).json({
-      message: 'USER Not Found',
+      message: 'Not Found',
     });
   }
 };

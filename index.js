@@ -71,7 +71,7 @@ app.get('/posts/tags', PostController.getLastTags);
 app.get('/tags', PostController.getLastTags);
 
 //SERVER
-app.listen(8080, (err) => {
+app.listen(4444, (err) => {
   if (err) {
     return console.log(err);
   }
